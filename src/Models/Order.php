@@ -1,5 +1,7 @@
 <?php 
 
+namespace App\Models;
+
 class Order 
 {
 
@@ -15,7 +17,7 @@ class Order
     {
 
         if (empty(trim($destination))) {
-            throw new InvalidArgumentException('Пункт назначения не может быть пустым');
+            throw new \InvalidArgumentException('Пункт назначения не может быть пустым');
         }
 
         $this->id = $id;
